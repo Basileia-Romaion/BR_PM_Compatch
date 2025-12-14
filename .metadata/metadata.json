@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Praecepta Militaria - Basileia Romaion Compatch",
+	"id":	"PM_BR",
+	"version":	"0.1",
+	"supported_game_version":	"",
+	"short_description":	"Mod that makes PM compatible with Basileia",
+	"tags":	["Advancements", "Alternative history", "Balance", "Characters", "Culture & Art", "Diplomacy", "Events", "Fixes", "Flags", "Gameplay", "Government and Estates", "Historical", "International Organizations", "Loading Screen", "Map", "Military", "Overhaul", "Religion", "Trade and Economics"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

@@ -1,0 +1,350 @@
+### PRAECEPTA MILITARIA - modify start to have correct laws and reforms ###
+countries = {
+	countries = {
+		BYZ = {
+				own_control_core = {
+				lemnos imbros molyvos mitilene gallipoli kesan
+				edirne hayrabolu corlu
+				rodoscuk enez kiyikoy ahtopol constantinople silivri catalca luleburgaz kirklareli
+				malgara alasehir
+				uskudar silli biga eregli
+				chios vize
+				ormenio
+				traianopolis demotica xanthia komotini
+				
+				#TUR
+				kibrus
+				bolu akcasehir akyazi konrapa gerede mengen mudurnu
+				bursa adranos iznik
+				izmit atpazari
+				domanic
+				sultanonu bilecik goynuk eynegol inonu nalli sogut
+				
+				#KRD
+				balikesir balya edremit manyas mihalic susurluk
+				ayvacik bandirma bayramic can canakkale gonen lapseki
+				dursunbey harmancik
+				
+				#GRM
+				mihaliccik sivrihisar bozan kaymaz
+				altintas emirdag seyitgazi
+				kutahya aslanapa emet simav tavsanli
+				usak banaz gediz seyhli
+				
+				#SRU
+				manisa akhisar demirci gordes kula
+				bergama bigadic soma
+				
+				#AYD
+				smyrna ayasuluk cesme menemen urla
+				tire balat birgi guzelhisar nazilli
+				
+				#MEN
+				milas
+				mugla bodrum cine gokabat marmaris megri yuksekkum
+				
+				#TVS
+				tavas
+				
+				#INA
+				honaz lazkiye
+				
+				#SHP
+				karahisar_i_sahib sandikli suhut
+				
+				#HMD
+				isparta burdur dinar egirdir uluborlu
+				golhisar stefani
+				
+				#TEK
+				antalya elmali karahisar_i_teke kas istanoz
+				manavgat finike
+				
+				#KNI
+				rodos kos
+			}
+			own_control_integrated = {
+				bukelon ustra
+			}
+			own_control_conquered = {
+			
+			}
+			our_cores_conquered_by_others = {
+				#ANA
+				aksaray kochisar insuyu
+				kirsehir nevsehir sariyahsi
+				konya celtik eregli_kar eskil hatunsaray karapinar ladik larende pirloganda
+				bekarlar bor_tur nigde
+				beysehir aksehir bolvadin sarkikaraagac seydisehir
+				ilgin turgut suluklu kulu_turkey obruk altinekin cumra
+				ankara cubuk haymana kalecik polatli karakecili
+				bozok baliseyh candir dinek_keskin sorgun
+				hacibektas
+				corum huseyinabad sungurlu
+				akdagmadeni aydincik koyulhisar sulusaray tokat zile
+				yalvac
+				beypazari kizilca
+				#THE
+				sporades servia kastoria hatera veria edessa kassandreia polygyros thessaloniki
+				kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama
+				ostrovo
+				grevena siatista
+				#THS
+				demetrias farsala elassona larissa stomio trikala tyrnavos karditsa
+				neopatras zetounion
+				#ATH
+				athens megara thebes atalanti livadeia
+				corinth damala ermioni xylokastro
+				gravia
+				bodonitsa
+				salona
+				#MOE
+				tripolitsa veligosti karytaina
+				monemvasia mystras oitylo leuktron astros
+				argos nafplio
+				#ACH
+				damala ermioni kalamata kyparissia
+				andritsaina pontikokastro andravida corinth
+				chalandritsa patras vostitsa kalavryta xylokastro
+				#NEG
+				negroponte kleisoura karystos kymi oreos eretreia
+				#TRE
+				trebizond giresun gorele gumushane surmene
+				bayramlu unye
+				mesudiye
+				amasya niksar sonisa
+				akkus terme
+				gadegara ladik_pontus merzifon
+				samsun
+				bafra gerze
+				rize khupati
+				#PAF
+				bartin
+				kastamonu arac boyabat devrekani inebolu kure_i_mamure sinop taskopru
+				cankiri bayat cerkes kursunlu tosya
+				safranbolu iskilip sabanozu ulus yenicepazari
+				gumus
+				#CRT
+				chania hagios_pavlos rethymno candia gergeri elounda viannos siteia
+				#CYP
+				nicosia_cyp famagusta kyrenia larnaca limassol morphou paphos
+				#GEN
+				samos ikaria foca #Aegean Sea
+				amasra #Black Sea
+				#VEN
+				corfu modon kythira andros mykonos amorgos karpathos
+				#NAX
+				naxos kythnos milos
+				#CEP
+				zakynthos leukas cephalonia
+				#CIL
+				adana ayas kars_armenia iskenderun
+				anavarza sis caxud hargan comana_cil
+				tarsus corycus candir_cil molevon
+				kapan
+				silifke anamur mut ermenek
+				alaiye selinti
+				antioch arsuz
+			}
+			
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "expl_indonesian_trade_route"
+			include = "expl_middle_east"
+			discovered_areas = {
+				red_sea_area
+				persian_gulf_sea_zones_area
+				upper_egypt_area
+				nubia_proper_area
+			}
+			discovered_provinces = {
+				amhara_province
+				argobba_province
+				begemder_province
+			}
+			include = "eastern_european_monarchy"
+
+				
+				government = {
+					type = monarchy
+					heir_selection = cognatic_primogeniture
+
+					ruler = byz_andronikos_iii_palaiologos
+					consort = byz_anna_of_savoy
+
+					ruler_term = { character = byz_isaakios_i_komnenos start_date = 1057.6.8 end_date = 1059.11.22 regnal_number = 1 }
+
+					ruler_term = { character = byz_konstantinos_x_doukas start_date = 1059.11.23 end_date = 1067.5.23 regnal_number = 10 }
+
+					ruler_term = { character = byz_romanos_iv_diogenes start_date = 1068.1.1 end_date = 1071.10.1 regnal_number = 4 }
+
+					ruler_term = { character = byz_michael_vii_doukas start_date = 1071.10.1 end_date = 1078.1.7 regnal_number = 7 }
+					ruler_term = {
+						character = byz_michael_vii_doukas start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 7
+						character = byz_nikephoros_iii_botaneiates start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 3
+					}
+
+					ruler_term = { character = byz_nikephoros_iii_botaneiates start_date = 1078.3.31 end_date = 1081.4.1 regnal_number = 3 }
+
+
+					ruler_term = { character = byz_alexios_i_komnenos start_date = 1081.4.1 end_date = 1118.8.15 regnal_number = 1 }
+					ruler_term = { character = byz_ioannes_ii_komnenos start_date = 1118.8.15 end_date = 1143.4.8 regnal_number = 2 }
+					ruler_term = { character = byz_manouel_i_komnenos start_date = 1143.4.8 end_date = 1180.9.24 regnal_number = 1 }
+					ruler_term = { character = byz_alexios_ii_komnenos start_date = 1180.9.24 end_date = 1183.9.24 regnal_number = 2 }
+					ruler_term = { character = byz_andronikos_i_komnenos start_date = 1183.9.24 end_date = 1185.9.12 regnal_number = 1 }
+
+					ruler_term = { character = byz_isaakios_ii_angelos start_date = 1185.9.12 end_date = 1195.4.8 regnal_number = 2 }
+					ruler_term = { character = byz_alexios_iii_angelos start_date = 1195.4.8 end_date = 1203.7.18 regnal_number = 3 }
+					ruler_term = {
+						character = byz_isaakios_ii_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 2 #Restored
+						character = byz_alexios_iv_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 4  #As Junior Co-Emperor
+					}
+					ruler_term = { character = byz_alexios_v_doukas start_date = 1204.1.27 end_date = 1204.4.12 regnal_number = 5 }
+
+					ruler_term = { character = byz_theodoros_i_laskaris start_date = 1205.5.1 end_date = 1221.11.1 regnal_number = 1 } # Emperor in Nikaea
+
+					ruler_term = { character = byz_ioannes_iii_vatatzes start_date = 1221.11.1 end_date = 1254.11.3 regnal_number = 3 } # Emperor in Nikaea
+
+
+					ruler_term = { character = byz_theodoros_ii_laskaris start_date = 1254.11.3 end_date = 1258.8.16 regnal_number = 2 } # Emperor in Nikaea
+					ruler_term = { character = byz_ioannes_iv_laskaris start_date = 1258.8.16 end_date = 1259.1.1 regnal_number = 4 } # Emperor in Nikaea
+
+					ruler_term = {
+						character = byz_ioannes_iv_laskaris start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 4 # Emperor in Nikaea
+						character = byz_michael_viii_palaiologos start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 8
+					}
+					ruler_term = { character = byz_michael_viii_palaiologos start_date = 1261.12.25 end_date = 1282.12.1 regnal_number = 8 }
+					ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1282.12.11 end_date = 1294.5.21 regnal_number = 2 }
+					ruler_term = {
+						character = byz_andronikos_ii_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 2
+						character = byz_michael_ix_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 9 # Junior Co-Emperor
+					}
+					ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1320.10.12 end_date = 1328.5.24 regnal_number = 2 }
+					ruler_term = { character = byz_andronikos_iii_palaiologos start_date = 1328.5.24 regnal_number = 3 }
+
+					centralization_vs_decentralization = 20
+					traditionalist_vs_innovative = -60
+					spiritualist_vs_humanist = -60
+					aristocracy_vs_plutocracy = -70
+					serfdom_vs_free_subjects = -60
+					mercantilism_vs_free_trade = -70
+					belligerent_vs_conciliatory = -20
+					quality_vs_quantity = -5
+					offensive_vs_defensive = 50
+					land_vs_naval = 20
+					capital_economy_vs_traditional_economy = 60
+					individualism_vs_communalism = -10
+					outward_vs_inward = 70
+
+				privilege = {
+					#Nobles
+					elaborate_court_ceremonies
+					noble_serfdom_rights
+					manorial_courts
+					noble_patronage_of_the_arts
+					consolidated_corruption_of_the_nobles
+
+					#Clergy
+					embellish_great_works_of_faith
+					clergy_powerful_dioceses
+					clergy_strengthen_faith
+					#consolidated_corruption_of_the_clergy
+
+					#Burghers
+					formal_guilds
+					land_of_commerce
+					market_fairs
+					sponsor_maritime_contracts
+					control_over_monetary_policy
+					control_over_the_coinage
+					#consolidated_corruption_of_the_burghers
+
+					#Commoners
+					access_to_royal_and_ecclesiastical_courts
+					#consolidated_corruption_of_the_peasants
+				}
+				reforms = {
+					military_settlements
+					tagmata_late
+					byz_inept_administration
+					autocracy
+					byz_army_late
+					theme_system
+					kritai_katholikoi
+					byz_strategos_early
+				}
+
+				laws = {
+					legal_code_law = byzantine_law
+					distribution_of_power_law = dop_favor_the_ruler
+					feudal_de_jure_law = by_blood
+					administrative_system = pronoia_system
+					patriarchate_law = state_patriarchate_policy
+					pm_internal_security = pm_lax_policies
+					pm_strategos_favor = pm_exclude_generals
+				}
+			}
+			#Setup to accurately portray the starting situation
+			currency_data = {
+				gold = 3000
+				stability = -5
+				prestige = 20
+				government_power = 10
+				inflation = 0.1
+				war_exhaustion = 10
+			}
+
+			tolerated_cultures = {
+				aromanian
+				anatolian_greek_culture
+				pontic_greek_culture
+			}
+			
+			liturgical_language = khoine_dialect
+			
+			capital = constantinople
+			dynasty = palaiologos_dynasty
+			country_rank = rank_empire
+		}
+	}
+
+	M0E = { #BR Morea replace to avoid conflct with PM Moesia
+			own_control_core = {
+				#BYZ
+				tripolitsa veligosti karytaina
+				monemvasia mystras oitylo leuktron astros
+				
+				#ARG
+				argos nafplio
+				
+			}
+			our_cores_conquered_by_others = {
+				#ACH
+				damala ermioni kalamata kyparissia
+				andritsaina pontikokastro andravida corinth
+				chalandritsa patras vostitsa kalavryta xylokastro
+			}
+			
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "eastern_european_monarchy"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			
+			country_rank = rank_duchy
+			liturgical_language = khoine_dialect
+			
+			capital = mystras
+		}
+}

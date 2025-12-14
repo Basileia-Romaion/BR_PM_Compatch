@@ -1,0 +1,4 @@
+diplomacy_manager = {
+    #BR Morea replace to avoid conflct with PM Moesia
+    dependency = { first = BYZ second = M0E subject_type = vassal } # Pronoïakon Ktéma
+}

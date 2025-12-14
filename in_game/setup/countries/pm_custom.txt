@@ -1,0 +1,7 @@
+
+M0E = { #BR Morea replace to avoid conflct with PM Moesia
+	color = rgb { 95 75 125 }
+
+	culture_definition = greek_culture
+	religion_definition = orthodox
+}
