@@ -2,74 +2,68 @@
 countries = {
 	countries = {
 		BYZ = {
-				own_control_core = {
-				lemnos imbros molyvos mitilene gallipoli kesan
+
+			own_control_core = {
+				gallipoli kesan
 				edirne hayrabolu corlu
 				rodoscuk enez kiyikoy ahtopol constantinople silivri catalca luleburgaz kirklareli
 				malgara alasehir
 				uskudar silli biga eregli
 				chios vize
 				ormenio
-				traianopolis demotica xanthia komotini
-				
+				traianopolis demotica
 				#TUR
-				kibrus
-				bolu akcasehir akyazi konrapa gerede mengen mudurnu
+				kibrus mihaliccik sivrihisar bozan kaymaz
+				bolu gerede mengen
+				akcasehir akyazi konrapa mudurnu
 				bursa adranos iznik
 				izmit atpazari
 				domanic
 				sultanonu bilecik goynuk eynegol inonu nalli sogut
-				
 				#KRD
 				balikesir balya edremit manyas mihalic susurluk
-				ayvacik bandirma bayramic can canakkale gonen lapseki
+				bandirma can gonen
 				dursunbey harmancik
-				
 				#GRM
-				mihaliccik sivrihisar bozan kaymaz
 				altintas emirdag seyitgazi
 				kutahya aslanapa emet simav tavsanli
 				usak banaz gediz seyhli
-				
 				#SRU
 				manisa akhisar demirci gordes kula
 				bergama bigadic soma
-				
 				#AYD
 				smyrna ayasuluk cesme menemen urla
 				tire balat birgi guzelhisar nazilli
-				
 				#MEN
 				milas
-				mugla bodrum cine gokabat marmaris megri yuksekkum
-				
+				mugla cine
 				#TVS
 				tavas
-				
 				#INA
 				honaz lazkiye
-				
 				#SHP
 				karahisar_i_sahib sandikli suhut
-				
 				#HMD
 				isparta burdur dinar egirdir uluborlu
 				golhisar stefani
-				
-				#TEK
-				antalya elmali karahisar_i_teke kas istanoz
-				manavgat finike
-				
-				#KNI
-				rodos kos
+				megri yuksekkum bodrum gokabat
 			}
 			own_control_integrated = {
-				bukelon ustra
+				bukelon
 			}
 			own_control_conquered = {
 			
 			}
 			our_cores_conquered_by_others = {
+				komotini
+				lapseki bayramic ayvacik
+				alaiye selinti
+				canakkale
+				thasos sporades lemnos imbros molyvos mitilene
+				marmaris  
+				antalya elmali karahisar_i_teke kas istanoz
+				manavgat finike
+				rodos kos karpathos
 				#ANA
 				aksaray kochisar insuyu
 				kirsehir nevsehir sariyahsi
@@ -89,6 +83,7 @@ countries = {
 				kilkis giannitsa gynaikokastro serres rentina kavala mount_athos thasos drama
 				ostrovo
 				grevena siatista
+				xanthia
 				#THS
 				demetrias farsala elassona larissa stomio trikala tyrnavos karditsa
 				neopatras zetounion
@@ -98,7 +93,7 @@ countries = {
 				gravia
 				bodonitsa
 				salona
-				#MOE
+				#M0E
 				tripolitsa veligosti karytaina
 				monemvasia mystras oitylo leuktron astros
 				argos nafplio
@@ -261,6 +256,7 @@ countries = {
 					sponsor_maritime_contracts
 					control_over_monetary_policy
 					control_over_the_coinage
+					br_latin_trade_naval_reliance
 					#consolidated_corruption_of_the_burghers
 
 					#Commoners
@@ -286,6 +282,7 @@ countries = {
 					patriarchate_law = state_patriarchate_policy
 					pm_internal_security = pm_lax_policies
 					pm_strategos_favor = pm_exclude_generals
+					pm_officer_training = pm_thematic_officers
 				}
 			}
 			#Setup to accurately portray the starting situation
@@ -312,39 +309,4 @@ countries = {
 		}
 	}
 
-	M0E = { #BR Morea replace to avoid conflct with PM Moesia
-			own_control_core = {
-				#BYZ
-				tripolitsa veligosti karytaina
-				monemvasia mystras oitylo leuktron astros
-				
-				#ARG
-				argos nafplio
-				
-			}
-			our_cores_conquered_by_others = {
-				#ACH
-				damala ermioni kalamata kyparissia
-				andritsaina pontikokastro andravida corinth
-				chalandritsa patras vostitsa kalavryta xylokastro
-			}
-			
-			starting_technology_level = 3
-			include = "expl_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "eastern_european_monarchy"
-			government = {
-				type = monarchy
-				heir_selection = cognatic_primogeniture
-				ruler = random
-			}
-			
-			country_rank = rank_duchy
-			liturgical_language = khoine_dialect
-			
-			capital = mystras
-		}
 }
