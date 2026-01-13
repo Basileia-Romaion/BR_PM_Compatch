@@ -1,0 +1,519 @@
+### PRAECEPTA MILITARIA - modify theme reforms ###
+REPLACE:theme_system = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_theme_system_not_obselete_tt
+			NOT = { has_variable = unlocked_modern_byzantine_army }
+		}
+	}
+	country_modifier = {
+		monthly_towards_decentralization = societal_value_minor_monthly_move
+		global_nobles_estate_power = 0.2
+		allow_thema_headquarters = yes
+		global_max_rural_control = -0.02
+		army_maintenance_cost = 0.25
+		###global_manpower_modifier = -0.10
+		wrong_culture_levy_size = 0.2
+		tax_income_efficiency = large_tax_income_efficiency_penalty
+		monthly_towards_decentralization = societal_value_tiny_monthly_move
+	}
+	years = 2
+}
+
+REPLACE:modern_imperial_army = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_reformed_imperial_army_tt
+			has_variable = unlocked_modern_byzantine_army
+		}
+	}
+	country_modifier = {
+		allow_kentrika = yes
+		government_reform_slots = 1
+		army_infantry_power = 0.07
+		#army_cavalry_power = 0.05
+		military_tactics = 0.1
+		army_artillery_power = 0.05
+		global_crown_estate_power = 0.15
+		##global_monthly_control = 0.001
+		army_maintenance_cost = 0.15
+		###monthly_towards_quality = societal_value_minor_monthly_move
+	}
+	years = 2
+}
+
+#byz_inept_administration = {
+#	age = age_1_traditions
+#	potential = {
+#		tag = BYZ
+#		custom_tooltip = {
+#			text = byz_inept_administration_tt
+#		}
+#	}
+#	country_modifier = {
+#		#monthly_towards_decentralization = societal_value_minor_monthly_move
+#		#global_nobles_estate_power = 0.25
+#		allow_soldier_estates = yes
+#		global_manpower_modifier = 0.05
+#		global_pop_promotion_speed_modifier = 0.015
+#		government_reform_slots = 1
+#	}
+#	years = 2
+#}
+
+military_settlements = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = military_settlements_tt
+		}
+	}
+	
+	country_modifier = {
+		#monthly_towards_decentralization = societal_value_minor_monthly_move
+		#global_nobles_estate_power = 0.25
+		allow_thema_headquarters = yes
+		allow_soldier_estates = yes
+		allow_burgi = yes
+		global_manpower_modifier = 0.05
+		global_pop_promotion_speed_modifier = 0.015
+		government_reform_slots = 1
+	}
+	years = 2
+}
+
+tagmata_late = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_late_tagmata_tt
+			NOT = { has_variable = unlocked_modern_tagmata }
+		}
+	}
+	
+
+	
+	#locked = {
+	#	is_locked_mechanic = {
+	#		mechanic = government_reform
+	#		type = tagmata_late
+	#	}
+	#}
+	country_modifier = {
+		government_reform_slots = 1
+		#army_cavalry_reinforce_cost_modifier = -0.15
+		#army_maintenance_cost = 0.5
+		army_cavalry_maintenance_cost_modifier = 0.4
+		army_cavalry_build_cost_modifier = 0.25
+		army_cavalry_power = 0.05
+		#unlock_unit = tagmata_cataphracts
+		#burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		#global_burghers_estate_power = 0.4
+		#monthly_towards_mercantilism = societal_value_monthly_move
+	}
+}
+
+reformed_tagmata = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_reformed_tagmata_tt
+			has_variable = unlocked_modern_tagmata
+		}
+	}
+	
+	allow = {
+		NOT = { has_reform = government_reform:integrated_regiments }
+	}
+	
+	
+	#locked = {
+	#	is_locked_mechanic = {
+	#		mechanic = government_reform
+	#		type = reformed_tagmata
+	#	}
+	#}
+	
+	country_modifier = {
+		global_crown_estate_power = 0.05
+		government_reform_slots = 1
+		discipline = 0.1
+		monthly_army_tradition = 0.05
+		army_cavalry_maintenance_cost_modifier = 0.25
+		army_cavalry_build_cost_modifier = 0.1
+		army_cavalry_power = 0.2
+		#unlock_unit = tagmata_cataphracts
+		#unlock_unit = royal_heavy_cavalry
+	}
+	years = 2
+}
+
+integrated_regiments = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_integrated_regiments_tt
+			has_variable = unlocked_modern_tagmata
+		}
+	}
+	#locked = {
+	#	is_locked_mechanic = {
+	#		mechanic = government_reform
+	#		type = integrated_regiments
+	#	}
+	#}
+	
+	allow = {
+		NOT = { has_reform = government_reform:reformed_tagmata }
+	}
+	
+	country_modifier = {
+		global_crown_estate_power = 0.05
+		government_reform_slots = 1
+		military_tactics = 0.1
+		land_morale = 0.15
+		army_auxiliary_power = 0.15
+		global_manpower_modifier = 0.1 #manpower
+		wrong_culture_levy_size = 0.1
+		#military_tactics = 0.1
+		#monthly_army_tradition = 0.05
+		#army_cavalry_maintenance_cost_modifier = 0.25
+		#army_cavalry_build_cost_modifier = 0.1
+		#army_cavalry_power = 0.2
+	}
+	years = 2
+}
+
+#byz_pronoia_muster = {
+#	age = age_2_renaissance
+#	potential = { has_or_had_tag = BYZ }
+#	requires = war_no_cb_cost_modifier_renaissance_advance
+#	
+#	global_levy_recruitment_speed_modifier = 0.1
+#	global_levy_size_modifier = 0.1
+#	nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+#}
+
+byz_inept_administration = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = BYZ
+		custom_tooltip = {
+			text = byz_inept_administration_tt
+			NOT = { has_variable = unlocked_good_administration }
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_inept_administration
+		}
+	}
+	
+	country_modifier = {
+		#monthly_towards_decentralization = societal_value_minor_monthly_move
+		#global_nobles_estate_power = 0.25
+		stability_investment = 0.075
+		stability_decay = -0.0005
+		peasants_estate_max_tax = -0.05
+		#global_monthly_food_modifier = 0.10
+		#cultural_tradition = 2
+		global_levy_recruitment_speed_modifier = -0.2
+		#global_levy_size_modifier = -0.05
+		government_reform_slots = 1
+		nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+		peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		#monthly_towards_aristocracy = societal_value_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
+	}
+	years = 2
+}
+
+byz_pronoia_muster = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_pronoia_muster_tt
+			has_variable = unlocked_good_administration
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_pronoia_muster
+		}
+	}
+	country_modifier = {
+		global_levy_recruitment_speed_modifier = 0.1
+		global_levy_size_modifier = 0.15
+		nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		
+	}
+	years = 2
+}
+
+byz_army_late = { #initial state of the Palaiologos; weak levies, some ability to entice mercenaries to serve but the cost is higher for Byz 
+
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = BYZ
+		custom_tooltip = {
+			text = byz_army_late_tt
+			NOT = { has_variable = unlocked_army_recovering }
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_army_late
+		}
+	}
+	country_modifier = {
+		crown_estate_levy_size = 0.1
+		peasants_estate_levy_size = 0.05
+		nobles_estate_levy_size = -0.15
+		levy_maintenance_modifier = 0.15
+		levy_combat_efficiency_modifier = -0.1
+		hire_mercenary_leader_cost_modifier = -0.25
+		mercenary_maintenance_cost = 0.2
+		monthly_nobles_estate_rebel_growth = 0.005
+		government_reform_slots = 1
+		#global_levy_recruitment_speed_modifier = 0.1
+		#global_levy_size_modifier = 0.15
+		#nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	}
+	years = 2
+}
+
+byz_army_recovering = { #the state of the army after some reforms. lose the malus to levy combat stats and reduce the maintanence penalty. merc leaders get more expensive to recruit but cost less to maintain
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = BYZ
+		custom_tooltip = {
+			text = byz_army_recovering_tt
+			NOT = { has_variable = unlocked_army_recovered }
+			has_variable = unlocked_army_recovering
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_army_recovering
+		}
+	}
+	country_modifier = {
+		crown_estate_levy_size = 0.15
+		peasants_estate_levy_size = 0.1
+		#nobles_estate_levy_size = -0.15
+		levy_maintenance_modifier = 0.05
+		#levy_combat_efficiency_modifier = -0.1
+		hire_mercenary_leader_cost_modifier = -0.05
+		mercenary_maintenance_cost = 0.1
+		#global_levy_recruitment_speed_modifier = 0.1
+		#global_levy_size_modifier = 0.05
+		discipline = 0.05
+		global_mercenaries_modifier = 0.1
+		hire_mercenary_leader_cost_modifier = -0.05
+		mercenary_maintenance_cost = 0.1
+		government_reform_slots = 1
+		#nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	}
+	years = 2
+}
+
+byz_army_recovered = { #final stage, mostly buffs?
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = BYZ
+		custom_tooltip = {
+			text = byz_army_recovered_tt
+			has_variable = unlocked_army_recovered
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_army_recovered
+		}
+	}
+	
+	country_modifier = {
+		#crown_estate_levy_size = 0.2
+		#peasants_estate_levy_size = 0.15
+		#nobles_estate_levy_size = -0.15
+		#levy_maintenance_modifier = 0.05
+		#levy_combat_efficiency_modifier = -0.1
+		#hire_mercenary_leader_cost_modifier = -0.05
+		#mercenary_maintenance_cost = 0.1
+		#global_levy_recruitment_speed_modifier = 0.1
+		global_levy_size_modifier = 0.18
+		global_mercenaries_modifier = 0.2
+		mercenary_maintenance_cost = -0.05
+		discipline = 0.1
+		land_unit_attrition = -0.1
+		government_reform_slots = 1
+		#hire_mercenary_leader_cost_modifier = -0.05
+		#mercenary_maintenance_cost = 0.1
+		#nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+	}
+	years = 2
+}
+
+byz_military_order_reform = {
+	age = age_1_traditions
+	government = monarchy
+	major = yes
+
+	potential = {
+		#religion = religion:orthodox
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		has_policy = pm_clerical_generals
+	}
+	
+	locked = {
+		has_estate_privilege = estate_privilege:orthodox_military_orders
+	}
+
+	
+	country_modifier = {
+		#clergy_estate_allowed_leading_military = yes #this is somewhat redundant but leave as-is
+		#clergy_estate_blocked_from_leading_military = no
+		monthly_towards_offensive = societal_value_monthly_move
+		monthly_towards_belligerent = societal_value_monthly_move
+		clergy_estate_levy_size = 0.25
+		fort_limit_modifier = 0.25
+		target_of_military_sponsorships = yes
+		blocked_from_conversion = yes
+	}
+
+	years = 2
+}
+
+byz_strategos_early = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_powerful_strategos_tt
+			NOT = { has_variable = unlocked_reformed_strategos }
+		}
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_strategos_early
+		}
+	}
+	country_modifier = {
+		allow_kastrons = yes
+		allow_despotates = yes
+		monthly_towards_aristocracy = societal_value_monthly_move
+		nobles_estate_target_satisfaction = medium_permanent_target_satisfaction
+		burghers_estate_target_satisfaction = -0.05
+		peasants_estate_target_satisfaction = -0.05
+		#byz_can_assume_fort_command = yes
+		government_reform_slots = 1
+	}
+	major = no
+	years = 2
+}
+
+byz_strategos_late = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ			
+			any_overlord_or_above = {
+				has_or_had_tag = BYZ
+			}
+			culture = { has_culture_group = culture_group:greek_group }
+		}
+		custom_tooltip = {
+			text = byz_integrated_strategos_tt
+			has_variable = unlocked_reformed_strategos
+		}
+
+	}
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = byz_strategos_late
+		}
+	}
+	
+	country_modifier = {
+		allow_kastrons = yes
+		allow_despotates = yes
+		global_crown_estate_power = 0.05
+		global_monthly_control = 0.002
+		army_infantry_maintenance_cost_modifier = -0.1
+		military_tactics = 0.15
+		government_reform_slots = 1
+		global_estate_target_satisfaction = 0.025
+	}
+	major = no
+	years = 2
+}
