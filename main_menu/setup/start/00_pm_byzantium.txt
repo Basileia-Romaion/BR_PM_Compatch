@@ -9,10 +9,8 @@ countries = {
 				rodoscuk enez kiyikoy ahtopol constantinople silivri catalca luleburgaz kirklareli
 				malgara alasehir
 				uskudar silli biga eregli
-				chios vize
-				ormenio
+				vize
 				traianopolis demotica
-				#TUR
 				kibrus mihaliccik sivrihisar bozan kaymaz
 				bolu gerede mengen
 				akcasehir akyazi konrapa mudurnu
@@ -20,40 +18,27 @@ countries = {
 				izmit atpazari
 				domanic
 				sultanonu bilecik goynuk eynegol inonu nalli sogut
-				#KRD
 				balikesir balya edremit manyas mihalic susurluk
 				bandirma can gonen
 				dursunbey harmancik
-				#GRM
 				altintas emirdag seyitgazi
 				kutahya aslanapa emet simav tavsanli
 				usak banaz gediz seyhli
-				#SRU
 				manisa akhisar demirci gordes kula
 				bergama bigadic soma
-				#AYD
-				smyrna ayasuluk cesme menemen urla
+				smyrna ayasuluk menemen urla
 				tire balat birgi guzelhisar nazilli
-				#MEN
 				milas
 				mugla cine
-				#TVS
 				tavas
-				#INA
 				honaz lazkiye
-				#SHP
 				karahisar_i_sahib sandikli suhut
-				#HMD
 				isparta burdur dinar egirdir uluborlu
 				golhisar stefani
 				megri yuksekkum bodrum gokabat
+				chios cesme
 			}
-			own_control_integrated = {
-				bukelon
-			}
-			own_control_conquered = {
-			
-			}
+
 			our_cores_conquered_by_others = {
 				komotini
 				lapseki bayramic ayvacik
@@ -140,6 +125,7 @@ countries = {
 				silifke anamur mut ermenek
 				alaiye selinti
 				antioch arsuz
+				bukelon ormenio
 			}
 			
 			starting_technology_level = 3
@@ -166,60 +152,183 @@ countries = {
 				
 				government = {
 					type = monarchy
-					heir_selection = cognatic_primogeniture
+					heir_selection = byzantine_succession
 
-					ruler = byz_andronikos_iii_palaiologos
-					consort = byz_anna_of_savoy
+                ruler = byz_andronikos_iii_palaiologos
+                consort = byz_anna_of_savoy
 
-					ruler_term = { character = byz_isaakios_i_komnenos start_date = 1057.6.8 end_date = 1059.11.22 regnal_number = 1 }
+                # Julio-Claudian Dynasty
+                ruler_term = { character = byz_caligula       start_date = 37.3.16   end_date = 41.1.24   regnal_number = 1 }
+                ruler_term = { character = byz_nero           start_date = 54.10.13  end_date = 68.6.9    regnal_number = 1 }
 
-					ruler_term = { character = byz_konstantinos_x_doukas start_date = 1059.11.23 end_date = 1067.5.23 regnal_number = 10 }
+                # Year of the Four Emperors
+                ruler_term = { character = byz_otho           start_date = 69.1.15   end_date = 69.4.16   regnal_number = 1 }
+                ruler_term = { character = byz_vitellius      start_date = 69.4.16   end_date = 69.12.22  regnal_number = 1 }
 
-					ruler_term = { character = byz_romanos_iv_diogenes start_date = 1068.1.1 end_date = 1071.10.1 regnal_number = 4 }
+                # Flavian Dynasty
+                ruler_term = { character = byz_vespasian      start_date = 69.12.22  end_date = 79.6.23   regnal_number = 1 }
+                ruler_term = { character = byz_titus          start_date = 79.6.23   end_date = 81.9.13   regnal_number = 1 }
+                ruler_term = { character = byz_domitian       start_date = 81.9.13   end_date = 96.9.18   regnal_number = 1 }
 
-					ruler_term = { character = byz_michael_vii_doukas start_date = 1071.10.1 end_date = 1078.1.7 regnal_number = 7 }
-					ruler_term = {
-						character = byz_michael_vii_doukas start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 7
-						character = byz_nikephoros_iii_botaneiates start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 3
-					}
+                # Nerva-Antonine Dynasty
+                ruler_term = { character = byz_nerva          start_date = 96.9.18   end_date = 98.1.25   regnal_number = 1 }
+                ruler_term = { character = byz_trajan         start_date = 98.1.25   end_date = 117.8.9   regnal_number = 1 }
+                ruler_term = { character = byz_hadrian        start_date = 117.8.9   end_date = 138.7.10  regnal_number = 1 }
+                ruler_term = { character = byz_antoninus_pius start_date = 138.7.10  end_date = 161.3.7   regnal_number = 1 }
+                ruler_term = { character = byz_marcus_aurelius start_date = 169.2.1  end_date = 180.3.17  regnal_number = 1 }
+                ruler_term = { character = byz_commodus        start_date = 180.3.17 end_date = 192.12.31 regnal_number = 1 }
 
-					ruler_term = { character = byz_nikephoros_iii_botaneiates start_date = 1078.3.31 end_date = 1081.4.1 regnal_number = 3 }
+                # Year of the Five Emperors
+                ruler_term = { character = byz_pertinax        start_date = 193.1.1  end_date = 193.3.28  regnal_number = 1 }
+                ruler_term = { character = byz_didius_julianus start_date = 193.3.28 end_date = 193.6.1   regnal_number = 1 }
+
+                # Severan Dynasty
+                ruler_term = { character = byz_septimius_severus start_date = 193.6.1  end_date = 211.2.4   regnal_number = 1 }
+                ruler_term = { character = byz_caracalla          start_date = 211.2.4  end_date = 217.4.8   regnal_number = 1 }
+                ruler_term = { character = byz_macrinus           start_date = 217.4.8  end_date = 218.6.8   regnal_number = 1 }
+                ruler_term = { character = byz_elagabalus         start_date = 218.6.8  end_date = 222.3.11  regnal_number = 1 }
+                ruler_term = { character = byz_alexander_severus  start_date = 222.3.11 end_date = 235.3.19  regnal_number = 1 }
+
+                # Crisis of the Third Century
+                ruler_term = { character = byz_maximinus_thrax    start_date = 235.3.19 end_date = 238.4.1   regnal_number = 1 }
+                ruler_term = { character = byz_gordian_iii       start_date = 238.7.29 end_date = 244.2.25  regnal_number = 3 }
+                ruler_term = { character = byz_philip_the_arab   start_date = 244.2.25 end_date = 249.9.1   regnal_number = 1 }
+                ruler_term = { character = byz_decius            start_date = 249.9.1  end_date = 251.7.1   regnal_number = 1 }
+                ruler_term = { character = byz_trebonianus_gallus start_date = 251.7.1 end_date = 253.8.1   regnal_number = 1 }
+                ruler_term = { character = byz_gallienus         start_date = 260.5.1  end_date = 268.9.1   regnal_number = 1 }
+                ruler_term = { character = byz_claudius_gothicus  start_date = 268.9.1  end_date = 270.4.1   regnal_number = 2 }
+                ruler_term = { character = byz_aurelian           start_date = 270.4.1  end_date = 275.9.25  regnal_number = 1 }
+                ruler_term = { character = byz_probus             start_date = 276.7.12 end_date = 282.10.1  regnal_number = 1 }
+
+                # Tetrarchy and Constantinian Dynasty
+                ruler_term = { character = byz_diocletian         start_date = 284.11.20 end_date = 305.5.1  regnal_number = 1 }
+                ruler_term = { character = byz_galerius           start_date = 305.5.1   end_date = 311.5.1  regnal_number = 1 }
+                ruler_term = { character = byz_licinius           start_date = 311.5.1   end_date = 324.9.18 regnal_number = 1 }
+                ruler_term = { character = byz_constantine_i      start_date = 324.9.18  end_date = 337.5.22 regnal_number = 1 }
+                ruler_term = { character = byz_constantius_ii     start_date = 337.5.22  end_date = 361.11.3 regnal_number = 2 } # Eastern line
+                ruler_term = { character = byz_julian_apostate    start_date = 361.11.3  end_date = 363.6.26 regnal_number = 1 }
+                ruler_term = { character = byz_jovian             start_date = 363.6.26  end_date = 364.2.17 regnal_number = 1 }
+
+                # Theodosian Dynasty
+                ruler_term = { character = byz_valens             start_date = 364.3.28  end_date = 378.8.9  regnal_number = 1 } # Eastern emperor
+                ruler_term = { character = byz_theodosius_i       start_date = 379.1.19  end_date = 395.1.17 regnal_number = 1 }
+                ruler_term = { character = byz_arcadius           start_date = 395.1.17  end_date = 408.5.1  regnal_number = 1 }
+                ruler_term = { character = byz_theodosius_ii      start_date = 408.5.1   end_date = 450.7.28 regnal_number = 2 }
+
+                # Leonid Dynasty
+                ruler_term = { character = byz_marcian            start_date = 450.8.25  end_date = 457.1.26 regnal_number = 1 }
+                ruler_term = { character = byz_leo_i              start_date = 457.2.7   end_date = 474.2.3  regnal_number = 1 }
+                ruler_term = { character = byz_leo_ii             start_date = 474.2.3   end_date = 474.11.17 regnal_number = 2 }
+                ruler_term = { character = byz_zeno               start_date = 474.11.17 end_date = 491.4.9  regnal_number = 1 }
+                ruler_term = { character = byz_anastasius_i       start_date = 491.4.11  end_date = 518.7.9  regnal_number = 1 }
+
+                # Justinianic Dynasty
+                ruler_term = { character = byz_justin_i           start_date = 518.7.10  end_date = 527.8.1  regnal_number = 1 }
+                ruler_term = { character = byz_justinian_i        start_date = 527.8.1   end_date = 565.11.14 regnal_number = 1 }
+                ruler_term = { character = byz_justin_ii          start_date = 565.11.14 end_date = 578.10.5 regnal_number = 2 }
+                ruler_term = { character = byz_maurice            start_date = 582.8.14  end_date = 602.11.27 regnal_number = 1 }
+                ruler_term = { character = byz_phocas             start_date = 602.11.27 end_date = 610.10.5 regnal_number = 1 }
+
+                # Heraclian Dynasty
+                ruler_term = { character = byz_heraclius          start_date = 610.10.5  end_date = 641.2.11 regnal_number = 1 }
+                ruler_term = { character = byz_constantine_iii    start_date = 641.2.11  end_date = 641.5.24 regnal_number = 3 }
+                ruler_term = { character = byz_constans_ii        start_date = 641.9.1   end_date = 668.9.15 regnal_number = 2 }
+                ruler_term = { character = byz_constantine_iv     start_date = 668.9.15  end_date = 685.9.14 regnal_number = 4 }
+                ruler_term = { character = byz_justinian_ii       start_date = 685.9.14  end_date = 695.8.1  regnal_number = 2 } # first reign
+
+                # Interregnum
+                ruler_term = { character = byz_leontios           start_date = 695.8.1   end_date = 698.7.1  regnal_number = 1 }
+                ruler_term = { character = byz_justinian_ii       start_date = 705.8.1   end_date = 711.12.4 regnal_number = 2 } # second reign restored
+                ruler_term = { character = byz_philippicus        start_date = 711.12.4  end_date = 713.6.3  regnal_number = 1 }
+                ruler_term = { character = byz_anastasius_ii      start_date = 713.6.3   end_date = 715.11.1 regnal_number = 2 }
+                ruler_term = { character = byz_theodosius_iii     start_date = 715.11.1  end_date = 717.3.25 regnal_number = 3 }
+
+                # Isaurian Dynasty
+                ruler_term = { character = byz_leo_iii            start_date = 717.3.25  end_date = 741.6.18 regnal_number = 3 }
+                ruler_term = { character = byz_constantine_v      start_date = 741.6.18  end_date = 775.9.14 regnal_number = 5 }
+                ruler_term = { character = byz_leo_iv             start_date = 775.9.14  end_date = 780.9.8  regnal_number = 4 }
+                ruler_term = { character = byz_constantine_vi     start_date = 780.9.8   end_date = 797.8.15 regnal_number = 6 }
+                ruler_term = { character = byz_irene              start_date = 797.8.15  end_date = 802.10.31 regnal_number = 1 }
+
+                # Nikephorian Dynasty
+                ruler_term = { character = byz_nikephoros_i       start_date = 802.10.31 end_date = 811.7.26 regnal_number = 1 }
+                ruler_term = { character = byz_staurakios         start_date = 811.7.26  end_date = 811.10.2 regnal_number = 1 }
+                ruler_term = { character = byz_michael_i_rangabe  start_date = 811.10.2  end_date = 813.7.11 regnal_number = 1 }
+
+                # Amorian Dynasty
+                ruler_term = { character = byz_leo_v              start_date = 813.7.11  end_date = 820.12.24 regnal_number = 5 }
+                ruler_term = { character = byz_michael_ii         start_date = 820.12.25 end_date = 829.10.2  regnal_number = 2 }
+                ruler_term = { character = byz_theophilos         start_date = 829.10.2  end_date = 842.1.20  regnal_number = 1 }
+                ruler_term = { character = byz_michael_iii        start_date = 842.1.20  end_date = 867.9.24  regnal_number = 3 }
+
+                # Macedonian Dynasty
+                ruler_term = { character = byz_basil_i            start_date = 867.9.24  end_date = 886.8.29  regnal_number = 1 }
+                ruler_term = { character = byz_leo_vi             start_date = 886.8.29  end_date = 912.5.11  regnal_number = 6 }
+                ruler_term = { character = byz_alexander_ii       start_date = 912.5.11  end_date = 913.6.6   regnal_number = 1 }
+                ruler_term = { character = byz_constantine_vii    start_date = 913.6.6   end_date = 920.12.17 regnal_number = 7 }
+                ruler_term = { character = byz_constantine_vii    start_date = 944.12.20 end_date = 959.11.9  regnal_number = 7 }
+                ruler_term = { character = byz_romanos_ii         start_date = 959.11.9  end_date = 963.3.15  regnal_number = 2 }
+                ruler_term = { character = byz_nikephoros_ii_phokas start_date = 963.7.16 end_date = 969.12.11 regnal_number = 2 }
+                ruler_term = { character = byz_john_i_tzimiskes   start_date = 969.12.11 end_date = 976.1.10  regnal_number = 1 }
+                ruler_term = { character = byz_basil_ii           start_date = 976.1.10  end_date = 1025.12.15 regnal_number = 2 }
+                ruler_term = { character = byz_constantine_viii   start_date = 1025.12.15 end_date = 1028.11.11 regnal_number = 8 }
+                ruler_term = { character = byz_romanos_iii_argyros start_date = 1028.11.11 end_date = 1034.4.11 regnal_number = 3 }
+                ruler_term = { character = byz_michael_iv         start_date = 1034.4.11 end_date = 1041.12.10 regnal_number = 4 }
+                ruler_term = { character = byz_michael_v_kalaphates start_date = 1041.12.13 end_date = 1042.4.21 regnal_number = 5 }
+                ruler_term = { character = byz_constantine_ix_monomachos start_date = 1042.6.11 end_date = 1055.1.11 regnal_number = 9 }
+                ruler_term = { character = byz_theodora_ii        start_date = 1055.1.12 end_date = 1056.9.11 regnal_number = 1 }
+                ruler_term = { character = byz_michael_vi_stratiotikos start_date = 1056.9.11 end_date = 1057.6.8 regnal_number = 6 }
+
+                ruler_term = { character = byz_isaakios_i_komnenos start_date = 1057.6.8 end_date = 1059.11.22 regnal_number = 1 }
+
+                ruler_term = { character = byz_konstantinos_x_doukas start_date = 1059.11.23 end_date = 1067.5.23 regnal_number = 10 }
+
+                ruler_term = { character = byz_romanos_iv_diogenes start_date = 1068.1.1 end_date = 1071.10.1 regnal_number = 4 }
+
+                ruler_term = { character = byz_michael_vii_doukas start_date = 1071.10.1 end_date = 1078.1.7 regnal_number = 7 }
+                ruler_term = {
+                    character = byz_michael_vii_doukas start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 7
+                    character = byz_nikephoros_iii_botaneiates start_date = 1078.1.7 end_date = 1078.3.31 regnal_number = 3
+                }
+
+                ruler_term = { character = byz_nikephoros_iii_botaneiates start_date = 1078.3.31 end_date = 1081.4.1 regnal_number = 3 }
 
 
-					ruler_term = { character = byz_alexios_i_komnenos start_date = 1081.4.1 end_date = 1118.8.15 regnal_number = 1 }
-					ruler_term = { character = byz_ioannes_ii_komnenos start_date = 1118.8.15 end_date = 1143.4.8 regnal_number = 2 }
-					ruler_term = { character = byz_manouel_i_komnenos start_date = 1143.4.8 end_date = 1180.9.24 regnal_number = 1 }
-					ruler_term = { character = byz_alexios_ii_komnenos start_date = 1180.9.24 end_date = 1183.9.24 regnal_number = 2 }
-					ruler_term = { character = byz_andronikos_i_komnenos start_date = 1183.9.24 end_date = 1185.9.12 regnal_number = 1 }
+                ruler_term = { character = byz_alexios_i_komnenos start_date = 1081.4.1 end_date = 1118.8.15 regnal_number = 1 }
+                ruler_term = { character = byz_ioannes_ii_komnenos start_date = 1118.8.15 end_date = 1143.4.8 regnal_number = 2 }
+                ruler_term = { character = byz_manouel_i_komnenos start_date = 1143.4.8 end_date = 1180.9.24 regnal_number = 1 }
+                ruler_term = { character = byz_alexios_ii_komnenos start_date = 1180.9.24 end_date = 1183.9.24 regnal_number = 2 }
+                ruler_term = { character = byz_andronikos_i_komnenos start_date = 1183.9.24 end_date = 1185.9.12 regnal_number = 1 }
 
-					ruler_term = { character = byz_isaakios_ii_angelos start_date = 1185.9.12 end_date = 1195.4.8 regnal_number = 2 }
-					ruler_term = { character = byz_alexios_iii_angelos start_date = 1195.4.8 end_date = 1203.7.18 regnal_number = 3 }
-					ruler_term = {
-						character = byz_isaakios_ii_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 2 #Restored
-						character = byz_alexios_iv_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 4  #As Junior Co-Emperor
-					}
-					ruler_term = { character = byz_alexios_v_doukas start_date = 1204.1.27 end_date = 1204.4.12 regnal_number = 5 }
+                ruler_term = { character = byz_isaakios_ii_angelos start_date = 1185.9.12 end_date = 1195.4.8 regnal_number = 2 }
+                ruler_term = { character = byz_alexios_iii_angelos start_date = 1195.4.8 end_date = 1203.7.18 regnal_number = 3 }
+                ruler_term = {
+                    character = byz_isaakios_ii_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 2 #Restored
+                    character = byz_alexios_iv_angelos start_date = 1203.7.19 end_date = 1204.1.27 regnal_number = 4  #As Junior Co-Emperor
+                }
+                ruler_term = { character = byz_alexios_v_doukas start_date = 1204.1.27 end_date = 1204.4.12 regnal_number = 5 }
 
-					ruler_term = { character = byz_theodoros_i_laskaris start_date = 1205.5.1 end_date = 1221.11.1 regnal_number = 1 } # Emperor in Nikaea
+                ruler_term = { character = byz_theodoros_i_laskaris start_date = 1205.5.1 end_date = 1221.11.1 regnal_number = 1 } # Emperor in Nikaea
 
-					ruler_term = { character = byz_ioannes_iii_vatatzes start_date = 1221.11.1 end_date = 1254.11.3 regnal_number = 3 } # Emperor in Nikaea
+                ruler_term = { character = byz_ioannes_iii_vatatzes start_date = 1221.11.1 end_date = 1254.11.3 regnal_number = 3 } # Emperor in Nikaea
 
 
-					ruler_term = { character = byz_theodoros_ii_laskaris start_date = 1254.11.3 end_date = 1258.8.16 regnal_number = 2 } # Emperor in Nikaea
-					ruler_term = { character = byz_ioannes_iv_laskaris start_date = 1258.8.16 end_date = 1259.1.1 regnal_number = 4 } # Emperor in Nikaea
+                ruler_term = { character = byz_theodoros_ii_laskaris start_date = 1254.11.3 end_date = 1258.8.16 regnal_number = 2 } # Emperor in Nikaea
+                ruler_term = { character = byz_ioannes_iv_laskaris start_date = 1258.8.16 end_date = 1259.1.1 regnal_number = 4 } # Emperor in Nikaea
 
-					ruler_term = {
-						character = byz_ioannes_iv_laskaris start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 4 # Emperor in Nikaea
-						character = byz_michael_viii_palaiologos start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 8
-					}
-					ruler_term = { character = byz_michael_viii_palaiologos start_date = 1261.12.25 end_date = 1282.12.1 regnal_number = 8 }
-					ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1282.12.11 end_date = 1294.5.21 regnal_number = 2 }
-					ruler_term = {
-						character = byz_andronikos_ii_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 2
-						character = byz_michael_ix_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 9 # Junior Co-Emperor
-					}
-					ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1320.10.12 end_date = 1328.5.24 regnal_number = 2 }
-					ruler_term = { character = byz_andronikos_iii_palaiologos start_date = 1328.5.24 regnal_number = 3 }
+                ruler_term = {
+                    character = byz_ioannes_iv_laskaris start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 4 # Emperor in Nikaea
+                    character = byz_michael_viii_palaiologos start_date = 1259.1.1 end_date = 1261.12.25 regnal_number = 8
+                }
+                ruler_term = { character = byz_michael_viii_palaiologos start_date = 1261.12.25 end_date = 1282.12.1 regnal_number = 8 }
+                ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1282.12.11 end_date = 1294.5.21 regnal_number = 2 }
+                ruler_term = {
+                    character = byz_andronikos_ii_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 2
+                    character = byz_michael_ix_palaiologos start_date = 1294.5.21 end_date = 1320.10.12 regnal_number = 9 # Junior Co-Emperor
+                }
+                ruler_term = { character = byz_andronikos_ii_palaiologos start_date = 1320.10.12 end_date = 1328.5.24 regnal_number = 2 }
+                ruler_term = { character = byz_andronikos_iii_palaiologos start_date = 1328.5.24 regnal_number = 3 }
+
 
 					centralization_vs_decentralization = 20
 					traditionalist_vs_innovative = -60
@@ -234,6 +343,7 @@ countries = {
 					capital_economy_vs_traditional_economy = 60
 					individualism_vs_communalism = -10
 					outward_vs_inward = 70
+					br_bureaucratic_vs_stratiotai = -35
 
 				privilege = {
 					#Nobles
@@ -242,12 +352,19 @@ countries = {
 					manorial_courts
 					noble_patronage_of_the_arts
 					consolidated_corruption_of_the_nobles
+					br_dynatoi_magnates
+					monetary_fiefs
 
 					#Clergy
 					embellish_great_works_of_faith
 					clergy_powerful_dioceses
 					clergy_strengthen_faith
-					#consolidated_corruption_of_the_clergy
+					clergy_literacy_rights
+					religious_diplomats
+					promote_cultural_unity
+					reduced_from_military_obligations
+					#br_roman_ecumenical_patriarch_privilege
+					br_bureaucrat_clergy
 
 					#Burghers
 					formal_guilds
@@ -257,33 +374,61 @@ countries = {
 					control_over_monetary_policy
 					control_over_the_coinage
 					br_latin_trade_naval_reliance
-					#consolidated_corruption_of_the_burghers
 
 					#Commoners
 					access_to_royal_and_ecclesiastical_courts
-					#consolidated_corruption_of_the_peasants
+					br_themata_peasant_privilege
+					peasants_free_peasantry
+					peasants_fewer_levies
+
+					tribes_tribal_levies
 				}
 				reforms = {
-					military_settlements
-					tagmata_late
-					byz_inept_administration
-					autocracy
-					byz_army_late
+					br_imperial_administration
+					#autocracy
 					theme_system
 					kritai_katholikoi
-					byz_strategos_early
+
+					#Fate of the Phoenix
+                    katepanata
+					
+					#Praecepta Militaria - Core
+                    military_settlements
+                    tagmata_late
+                    byz_inept_administration
+                    byz_army_late
+                    byz_strategos_early
+                    pm_byz_army_efficiency_I
+                    pm_byz_naval_efficiency_I
 				}
 
 				laws = {
 					legal_code_law = byzantine_law
-					distribution_of_power_law = dop_favor_the_ruler
+					royal_court_customs_law = byz_porphyrogennetos_court_policy
+					distribution_of_power_law = br_roman_distribution_of_power_law
 					feudal_de_jure_law = by_blood
 					administrative_system = pronoia_system
 					patriarchate_law = state_patriarchate_policy
-					pm_internal_security = pm_lax_policies
-					pm_strategos_favor = pm_exclude_generals
-					pm_officer_training = pm_thematic_officers
-				}
+					bureaucracy_law = centralized_bureaucracy_policy
+					medieval_levy_law = br_thema_levies
+					cultural_traditions_law = br_roman_tradition
+
+					#Praecepta Militaria - Core
+                    pm_internal_security = pm_favor_lax_policies
+                    pm_strategos_favor = pm_exclude_generals
+                    pm_officer_training = pm_thematic_officers
+
+                }
+                      
+                bureaucracies = {
+                    { type = themata_bureaucracy                     date = 680.6.1 entrenchment = 50 	}   # Consolidation of the Theme system (7th c.)
+                    { type = imperial_senate_bureaucracy             date = 330.5.11 entrenchment = 75 	}   # Constantinople founded, Senate formalized
+                    { type = honorary_titles_bureaucracy             date = 500.6.1  entrenchment = 50  }   # Mature late Roman / early Byzantine dignities
+                    { type = sixty_books_of_the_basilika_bureaucracy date = 892.6.1  entrenchment = 25  }   # Leo VI promulgates the Basilika
+					{ type = ritualistic_court_bureaucracy           date = 330.5.11 entrenchment = 30  }
+					{ type = court_eunuchs_bureaucracy           	 date = 700.5.11 entrenchment = 25 	}
+                }
+
 			}
 			#Setup to accurately portray the starting situation
 			currency_data = {
@@ -295,13 +440,16 @@ countries = {
 				war_exhaustion = 10
 			}
 
+			accepted_cultures = {
+				varangian
+			}
 			tolerated_cultures = {
-				aromanian
+				latinoi
 				anatolian_greek_culture
 				pontic_greek_culture
 			}
 			
-			liturgical_language = khoine_dialect
+			liturgical_language = koine_dialect
 			
 			capital = constantinople
 			dynasty = palaiologos_dynasty

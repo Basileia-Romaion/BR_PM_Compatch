@@ -1,0 +1,11 @@
+building_manager = {
+	
+	#Greece and Balkans
+    
+	pm_constantinople_golden_gate = { tag = BYZ level = 1 location =  constantinople }
+	
+	#BR already has its own versions
+	#pm_constantinople_hippodrome = { tag = BYZ level = 1 location =  constantinople }
+	#pm_hagia_sophia = { tag = BYZ level = 1 location =  constantinople }
+
+}
